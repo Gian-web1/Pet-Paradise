@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Pet Paradise</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <a href="webp.html">
+                <img src="image/logo.png" alt="Pet Paradise Logo">
+            </a>
+        </div>
+        <ul class="sidebar">
+            <li><a href="webp.html" class="home">Home</a></li>
+            <li><a href="location.html">Location</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <button class="signup-btn">Sign Up</button>
+
+        <!-- Sign Up Modal -->
+        <div id="signupModal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>Create Account</h2>
+                    <span class="close">&times;</span>
+                </div>
+                <form id="signupForm" class="signup-form">
+                    <div class="input-group">
+                        <input type="text" id="firstName" name="firstName" required>
+                        <label for="firstName">First Name</label>
+                    </div>
+                    <div class="input-group">
+                        <input type="text" id="lastName" name="lastName" required>
+                        <label for="lastName">Last Name</label>
+                    </div>
+                    <div class="input-group">
+                        <input type="email" id="email" name="email" required>
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="input-group">
+                        <input type="tel" id="phone" name="phone">
+                        <label for="phone">Phone (Optional)</label>
+                    </div>
+                    <div class="input-group">
+                        <input type="password" id="password" name="password" required>
+                        <label for="password">Password</label>
+                    </div>
+                    <div class="input-group">
+                        <input type="password" id="confirmPassword" name="confirmPassword" required>
+                        <label for="confirmPassword">Confirm Password</label>
+                    </div>
+                    <div class="checkbox-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="terms" required>
+                            <span class="checkmark"></span>
+                            I agree to the <a href="#" class="terms-link">Terms & Conditions</a>
+                        </label>
+                    </div>
+                    <button type="submit" class="submit-btn">Create Account</button>
+                </form>
+                <div class="modal-footer">
+                    <p>Already have an account? <a href="#" id="loginLink" class="login-link">Sign In</a></p>
+                </div>
+            </div>
+        </div>
+
+    </nav>
+
+
+    <!--FLOATING CART-->
+    <a href="product.html" class="floating-cart">
+        <i class="fas fa-shopping-cart"></i>
+    </a>
+
+    <!--FIND PET-->
+    <div class="search-pet">
+        <section class="find-pet">
+            <div class="pet-left">
+                <img src="image/dog.png" alt="Dog">
+            </div>
+
+            <div class="pet-center">
+                <h1>Find Your Perfect Pet</h1>
+
+                <div class="search-bar">
+                    <input id="searchInput" type="text" placeholder="Search pets...">
+                    <button id="searchBtn" type="submit"><i class="fas fa-search"></i></button>
+                </div>
+
+            </div>
+
+            <div class="pet-right">
+                <img src="image/cat.png" alt="Cat">
+            </div>
+        </section>
+    </div>
+
+    <!--NEW ARRIVAL-->
+    <div class="new-arrivals">
+        <h2>New Arrivals</h2>
+        <div class="card-container">
+            <div class="card">
+                <img src="image/monkey.png" alt="Monkey">
+
+                <h3>Monkey With Shades</h3>
+
+                <div class="info">
+                    <span class="type">Accessories</span>
+                    <span class="price">₱199</span>
+                </div>
+                <a href="product.html#new-arival" class="view">
+                    <button class="card-bton">View</button></a>
+            </div>
+            <div class="card">
+                <img src="image/fish.png" alt="Fish">
+
+                <h3>Gold Fish</h3>
+
+                <div class="info">
+                    <span class="type">Aquatic</span>
+                    <span class="price">₱300</span>
+                </div>
+
+                <a href="product.html#new-arival" class="view">
+                    <button class="card-bton">View</button></a>
+            </div>
+            <div class="card">
+                <img src="image/dog1.png" alt="Dog">
+
+                <h3>Sigma Dog</h3>
+
+                <div class="info">
+                    <span class="type">Accessories</span>
+                    <span class="price">₱299</span>
+                </div>
+
+                <a href="product.html#new-arival" class="view">
+                    <button class="card-bton">View</button></a>
+            </div>
+            <div class="card">
+                <img src="image/acc.png" alt="Cat">
+
+                <h3>Dog Toys</h3>
+
+                <div class="info">
+                    <span class="type">Accessories</span>
+                    <span class="price">₱199</span>
+                </div>
+
+                <a href="product.html#new-arival" class="view">
+                    <button class="card-bton">View</button></a>
+            </div>
+            <div class="card">
+                <img src="image/dress.png" alt="Cat">
+
+                <h3>Dog Princess Dress</h3>
+
+                <div class="info">
+                    <span class="type">Dress</span>
+                    <span class="price">₱249</span>
+                </div>
+
+                <a href="product.html#new-arival" class="view">
+                    <button class="card-bton">View</button></a>
+            </div>
+            <div class="card">
+                <img src="image/food.png" alt="Cat">
+
+                <h3>Dog Food</h3>
+
+                <div class="info">
+                    <span class="type">Food</span>
+                    <span class="price">₱2,490</span>
+                </div>
+
+                <a href="product.html#new-arival" class="view">
+                    <button class="card-bton">View</button></a>
+            </div>
+        </div>
+    </div>
+
+    <!--QOUTE-->
+    <div class="quote-section">
+        <div class="side left-side">
+            <div class="pet-slider">
+                <img src="slider/bird.png" alt="Bird Image">
+                <img src="slider/cat.png" alt="Cat Image">
+                <img src="slider/hamster.png" alt="Hamster Image">
+            </div>
+            <div class="side-info">
+
+                <div class="info-slide">
+                    <h4>Bird</h4>
+                    <p>Colorful and cheerful</p>
+                </div>
+
+                <div class="info-slide">
+                    <h4>Cat</h4>
+                    <p>Calm and independent</p>
+                </div>
+
+                <div class="info-slide">
+                    <h4>Hamster</h4>
+                    <p>Small and cute</p>
+                </div>
+
+            </div>
+        </div>
+
+        <!--PET SLIDER-->
+        <div class="quote-content">
+            <a href="webp.html">
+                <img src="image/logo.png" alt="Pet Paradise Logo" class="quote-logo">
+            </a>
+            <p class="quote-text">"Your Pet is Our Passion"</p>
+        </div>
+
+        <div class="side right-side">
+            <div class="side-info">
+
+                <div class="info-slide">
+                    <h4>Monkey</h4>
+                    <p>Playful and <br>smart</p>
+                </div>
+
+                <div class="info-slide">
+                    <h4>Fish</h4>
+                    <p>Peaceful and relaxing</p>
+                </div>
+
+                <div class="info-slide">
+                    <h4>Rabbit</h4>
+                    <p>Soft and<br> friendly</p>
+                </div>
+
+            </div>
+
+            <div class="pet-slider">
+                <img src="slider/monkey2.png" alt="Monkey Image">
+                <img src="slider/nemo.png" alt="Fish Image">
+                <img src="slider/rabbit.png" alt="Rabbit Imahe">
+            </div>
+        </div>
+    </div>
+
+    <!--EXPLORING PET-->
+    <div class="pet-section">
+        <a href="webp.html">
+            <img src="image/logo.png" alt="Logo" class="logo2">
+        </a>
+        <!-- ITEM 1 -->
+        <div class="pet-card">
+
+            <div class="pet-content">
+                <h3>Premium Dogs</h3>
+                <p>
+                    Discover healthy and clingy dogs perfect for your home.
+                    Carefully selected breeds to match your lifestyle.
+                </p>
+
+                <a href="product.html#adopt-pet" class="explore">
+                    <button>Explore</button></a>
+
+            </div>
+        </div>
+
+        <!-- ITEM 2 -->
+        <div class="pet-card reverse">
+
+            <div class="pet-content">
+                <h3>Lovely Cats</h3>
+                <p>
+                    Sweet, playful, and affectionate cats ready to become your companion.
+                </p>
+
+                <a href="product.html#adopt-pet" class="explore">
+                    <button>Explore</button></a>
+
+            </div>
+        </div>
+
+    </div>
+    <!--PRODUCTS-->
+    <div class="products">
+        <h2 class="products-title">Our Products</h2>
+        <div class="products-container">
+
+            <div class="product-card">
+                <img src="product/dog.png" alt="">
+                <hr class="divider">
+                <h3>Mixed Breeds Dog and Puppy</h3>
+
+                <a href="product.html#adopt-pet">
+                    <button class="card-btn1">View</button></a>
+            </div>
+
+            <div class="product-card">
+                <img src="product/cat.png" alt="Cat">
+                <hr class="divider">
+                <h3>Cats Breeded</h3>
+                <a href="product.html#adopt-pet">
+                    <button class="card-btn1">View</button></a>
+            </div>
+
+            <div class="product-card">
+                <img src="https://img.lazcdn.com/g/ff/kf/S93ba036476564017b0d9691a514d4033n.jpg_720x720q80.jpg_.webp"
+                    alt="Bird">
+                <hr class="divider">
+                <h3>Betta Food</h3>
+                <a href="product.html#fish-food">
+                    <button class="card-btn1">View</button></a>
+            </div>
+
+            <div class="product-card">
+                <img src="product/accessories.png" alt="Accessories">
+                <hr class="divider">
+                <h3>Pet Accessories</h3>
+                <a href="product.html#accessories">
+                    <button class="card-btn1">View</button></a>
+            </div>
+            <div class="product-card">
+                <img src="product/food.png" alt="Accessories">
+                <hr class="divider">
+                <h3>Train & Reward Dog Treats</h3>
+                <a href="product.html#dog-food">
+                    <button class="card-btn1">View</button></a>
+            </div>
+        </div>
+    </div>
+    <a href="product.html">
+        <button class="viewall-btn">View All</button></a>
+    </div>
+
+    <!--FOOTER-->
+    <footer class="footer">
+        <div class="footer-container">
+
+            <!-- LEFT -->
+            <div class="footer-col">
+                <a href="webp.html">
+                    <img class="footer-logo" src="image/logo.png" alt="Pet Paradise Logo">
+                </a>
+                <p>Your pet is our passion. We provide quality products for your beloved pets.</p>
+            </div>
+
+            <!-- LINKS -->
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="webp.html">Home</a></li>
+                    <li><a href="location.html">Location</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- CONTACT -->
+            <div class="footer-col">
+                <h3>Contact</h3>
+                <p>📍 471 1, Cabanatuan City, Nueva Ecija</p>
+                <p>📞 09067703192</p>
+                <p>📩 petparadise@email.com</p>
+            </div>
+
+            <div class="footer-col">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#https://www.facebook.com/profile.php?id=61563206499746"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a href="#https://www.instagram.com/gjyn.cprs/"><i class="fab fa-instagram"></i></a>
+                    <a href="#https://www.tiktok.com/@pet_paradisee?is_from_webapp=1&sender_device=pc"><i
+                            class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- BOTTOM -->
+        <div class="footer-bottom">
+            <p>© 2026 Pet Paradise. All Rights Reserved.</p>
+        </div>
+
+    </footer>
+
+    <script>
+        // For Sign Up script only
+        document.addEventListener('DOMContentLoaded', function () {
+            const signupBtn = document.querySelector('.signup-btn');
+            const modal = document.getElementById('signupModal');
+            const closeBtn = document.querySelector('.close');
+            const signupForm = document.getElementById('signupForm');
+
+            // Open modal
+            signupBtn.addEventListener('click', function (e) {
+                e.preventDefault();
+                modal.classList.add('show');
+                document.body.style.overflow = 'hidden';
+            });
+
+            function closeModal() {
+                modal.classList.remove('show');
+                document.body.style.overflow = 'auto';
+                signupForm.reset();
+            }
+
+            closeBtn.addEventListener('click', closeModal);
+            window.addEventListener('click', function (e) {
+                if (e.target === modal) {
+                    closeModal();
+                }
+            });
+
+            document.addEventListener('keydown', function (e) {
+                if (e.key === 'Escape' && modal.classList.contains('show')) {
+                    closeModal();
+                }
+            });
+
+            signupForm.addEventListener('submit', function (e) {
+                e.preventDefault();
+
+                const formData = new FormData(signupForm);
+                const data = Object.fromEntries(formData);
+
+                if (data.password !== data.confirmPassword) {
+                    alert('Passwords do not match!');
+                    return;
+                }
+
+                const submitBtn = document.querySelector('.submit-btn');
+                const originalText = submitBtn.textContent;
+                submitBtn.textContent = 'Creating Account...';
+                submitBtn.disabled = true;
+
+                setTimeout(() => {
+                    console.log('Sign up data:', data);
+                    alert('Account created successfully! (This is a demo)');
+                    closeModal();
+                    submitBtn.textContent = originalText;
+                    submitBtn.disabled = false;
+                }, 2000);
+            });
+        });
+
+    </script>
+
+</body>
+
+</html>
