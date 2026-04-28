@@ -273,3 +273,56 @@ ul a:hover::after {
     font-size: 14px;
     color: #ccc;
 }
+
+/* RESPONSIVE MEDIA QUERIES - ADD AT END OF YOUR CSS */
+
+@media (max-width: 768px) {
+    nav {
+        padding: 10px 15px;
+    }
+
+    nav ul {
+        display: none;
+        /* optional: hide menu for mobile */
+    }
+
+    .location-section {
+        padding: 50px 25px !important;
+    }
+
+    .location-title {
+        font-size: 36px !important;
+        margin-bottom: 40px !important;
+    }
+
+    .map-container {
+        margin: 30px auto !important;
+        max-width: 100% !important;
+    }
+
+    .map-container iframe {
+        height: 350px !important;
+        border-radius: 12px !important;
+    }
+
+    .store-info {
+        max-width: 90% !important;
+        font-size: 16px !important;
+        padding: 30px !important;
+    }
+
+    .store-info h3 {
+        font-size: 24px !important;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        gap: 30px;
+        padding: 0 25px;
+    }
+
+
+    html {
+        scroll-padding-top: 65px !important;
+    }
+}
