@@ -281,3 +281,53 @@ ul a:hover::after {
     font-size: 14px;
     color: #ccc;
 }
+
+/* RESPONSIVE MEDIA QUERIES - ADD AT END OF YOUR CSS */
+
+@media (max-width: 768px) {
+    nav {
+        padding: 10px 15px;
+    }
+
+    nav ul {
+        display: none;
+        /* optional: hide menu for mobile */
+    }
+
+    .about-container {
+        max-width: 100%;
+        padding: 40px 25px;
+        margin: 50px 20px;
+    }
+
+    .about-container h1 {
+        font-size: 36px;
+        margin-bottom: 35px;
+        line-height: 1.2;
+    }
+
+    .about-container h2 {
+        font-size: 22px;
+        margin-top: 25px;
+    }
+
+    .about-container p {
+        font-size: 17px;
+        line-height: 1.7;
+    }
+
+    .about-container hr {
+        margin: 35px 0;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        gap: 30px;
+        padding: 0 25px;
+    }
+
+
+    html {
+        scroll-padding-top: 65px;
+    }
+}
